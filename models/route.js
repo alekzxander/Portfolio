@@ -8,19 +8,18 @@ module.exports = function (app){
         res.render('index.ejs')
     })
     app.post('/email', (req, res) => {
-        console.log(process.env.EMAIL)
+      
         let transporter = nodemailer.createTransport({
             service: 'Gmail',
             host: 'smtp.gmail.com',
             secure: true,
             port: 465,
-            
+        
             auth: {
                 user: process.env.EMAIL,
                 pass: process.env.PASS
             }
         });
-        console.log(req.body.email)
         
         let mail = {
             from: req.body.email,
