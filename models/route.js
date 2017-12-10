@@ -25,7 +25,7 @@ module.exports = function (app){
             from: req.body.email,
             to: process.env.EMAIL,
             subject: req.body.subject,
-            html: req.body.firstname+ '\n' + req.body.name + '\n' +  req.body.email + '\n' + req.body.message
+            html:  req.body.email + '\n' + req.body.name + '\n' + req.body.message
         }
         transporter.sendMail(mail,(error, response) =>{
             if (error) {
