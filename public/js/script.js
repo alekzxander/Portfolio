@@ -4,7 +4,7 @@ $(function () {
 
     setTimeout(function () {
         $('.text-animate').removeClass('hidden');
-        $('.fadein-text').fadeIn(500);
+        $('.fadein-text').fadeIn(1500);
   
         
     }, 500)
