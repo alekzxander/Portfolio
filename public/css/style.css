@@ -240,9 +240,51 @@ header h3
     padding-top: 110px;
     padding-bottom: 150px;
 }
+.btn-primary
+{
+    background: #386ba2;
+    border:none;
+    cursor: pointer;
+    color: white;
+}
+.btn-primary:hover
+{
+    background: #386ba2;
+    border: none;
+    
+}
 
+.btn-primary a
+{
+    color: white;
+    text-decoration:none;
+}
 
+.btn-success
+{
+    background: #8bca4a;
+    color: white;
+    border: none;
+    
+}
+.atout button
+{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.btn-success:hover
+{
+    background: #8bca4a;
+    border: none;
 
+}
+
+.btn-success a
+{
+    color: white;
+    padding: 10px;
+    text-decoration:none;
+}
   .mail-message-area{
     width:100%;
     padding:0 15px;
@@ -345,4 +387,16 @@ footer
 {
     height: 150px;
     background: #000000;
+    padding-top: 40px;
+}
+footer p 
+{
+    line-height: 1;
+    color: white;
+}
+.made
+{
+    margin-top: 72px;
+    font-size: 12px;
+    text-align: right;
 }
