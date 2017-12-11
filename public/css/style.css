@@ -400,3 +400,14 @@ footer p
     font-size: 12px;
     text-align: right;
 }
+.atout figure 
+{
+    text-align: right;
+}
+@media all and (max-width:780px)
+{
+    .atout figure
+    {
+        text-align:center;
+    }
+}
