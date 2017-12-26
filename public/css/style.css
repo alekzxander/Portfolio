@@ -5,7 +5,7 @@ p
 header
 {
     height: 700px;
-    background: url(./../images/bannier1.jpg) no-repeat;
+    background: url(./../images/bannier.jpg) no-repeat;
     background-size:cover; 
 }
 header .nav-item
