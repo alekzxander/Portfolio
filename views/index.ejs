@@ -1,267 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link href="./css/style.css" rel="stylesheet">  
+    <link href="./css/style.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
+
 <body>
-   <header id="acceuil">
+    <header id="acceuil">
         <nav id="myNav-fixed" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-               
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end container" id="navbarNav">
-                  <ul class="navbar-nav">
+            <div class="collapse navbar-collapse justify-content-end container" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item ">
-                      <a class="nav-link scroll" href="#acceuil">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link scroll" href="#acceuil">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link scroll " href="#presentation">A propos de moi</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link scroll" href="#competence">Mes compétences</a>
+                        <a class="nav-link scroll" href="#hook-skill">Mes compétences</a>
                     </li>
                     <li>
-                      <a class="nav-link scroll" href="#projet">Mes projets</a>
-                      <a href=""></a>
+                        <a class="nav-link scroll" href="#projet">Mes projets</a>
+                        <a href=""></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link scroll" href="#contact">Contact</a>
+                        <a class="nav-link scroll" href="#contact">Contact</a>
                     </li>
-                  </ul>
-                </div>
-              </nav>
-              
-      <ul class="text-animate hidden">
-          <li>A</li>
-          <li>L</li>
-          <li>E</li>
-          <li>K</li>
-          <li>Z</li>
-          <li>X</li>
-          <li>A</li>
-          <li>N</li>
-          <li>D</li>
-        
-    </ul>
-    <div class="fadein-text">
-        <h2>Web developpeur junior</h2>
-        <h3>front/back-end</h3>
-    </div>
-   </header>
-<div id="presentation" data-midnight="blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>A propos de moi</h1>
-
-                <p>Passioné par l'informatique depuis petit, j'ai passé beaucoup de temps devant un ordinateur
-                    sans jamais comprendre ce qu'il se cachait sous ces lignes de codes.
-                    Par un concours de circontances, je me suis retrouvé dans la restauration, consacrant mes mains a d'autres desseins.
-                    J'ai excercé ce metier durant 10 ans avant de changer de voie pour me tourner vers celle du web developpement.
-                </p>
-                <p>
-                    J'ai d'abord commencé par apprendre seul grâce à des tutos sur le net. Puis par la suite j'ai intégré une formation
-                    a <a href="https://simplon.co/">Simplon</a> Reunion. 
-                    Désireux de toujours apprendre, je me suis beaucoup investi dans mon nouveau rôle. 
-                    Spécialisé dans le full-stack js,  je suis capable de faire du front-end et du back-end.</p>
-                    Autonome, assidu et de bonne humeur.
-                <p>    
-                    Je saurai mettre à disposition mes compétences à qui veut en profiter :)
-                </p>
+                </ul>
             </div>
-            <div class="col-md-6">
-                
-                <div class="atout">
-                    <p>Web design</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar"  aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p>Front end</p>
-                    <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    <p>Back end</p>
-                        <div class="progress">
-                                <div class="progress-bar" role="progressbar"  aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <figure>
-                                    <button type="button" class="btn btn-primary"><a href="images/Alexandre-Callens-cv.pdf" download="Alexandre-Callens-cv.pdf">Telecharger mon cv</a></button>                         
-                                 <button type="button" class="btn btn-success"><a href="images/Alexandre-Callens-cv.pdf">
-                                 Visualiser mon cv</a></button>
-                            </figure> 
-                            
-                    </div> 
-                </div>
+        </nav>
+
+        <ul class="text-animate hidden">
+            <li>A</li>
+            <li>L</li>
+            <li>E</li>
+            <li>K</li>
+            <li>Z</li>
+            <li>X</li>
+            <li>A</li>
+            <li>N</li>
+            <li>D</li>
+
+        </ul>
+        <div class="fadein-text">
+            <h2>Web developpeur junior</h2>
+            <h3>Full stack</h3>
+            <div class="presentation">
+                <p>
+                    <%= pres.content %>
+                </p>
             </div>
         </div>
-    </div>
-    <div id="competence" data-midnight="green">
+    </header>
+    <div id="competence" data-midnight="blue">
         <div class="container">
-            <h1>Mes compétences</h1>
-            <p>Durant ma formation et mon stage, j'ai su prendre en main ces diverses compétences.</p>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="box-carte">
-                        <figure class="text-center">
-                            <img src="images/html.png" style="height: 65px;width : 90px;" alt="">
-                        </figure>
-                        <h3>css/htmlL</h3>
-                        <p>Ces deux outils, base de chaque projet m'ont permis d'acquerir leurs maitrises.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="box-carte">
-                        <figure class="text-center">
-                            <img src="images/bootstrap.png" alt="">
-                        </figure>
-                        <h3>boostrap</h3>
-                        <p> Omniprésent dans mes projets, j'y est acquis le savoir-faire nécessaire à la réalisation de nouveaux sites web.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="box-carte">
-                        <figure class="text-center">
-                            <img src="images/javascript.png" alt="">
-                        </figure>
-                        <h3>JavaScript/jQuery</h3>
-                        <p>Outil central de ma formation, j'ai appris à utiliser les classes, fonctions, tableau orienté objet ect... </p>
+            <div class="all-skill" id="hook-skill">
+                <div class="row">
+                    <% skills.forEach((skill, i) => { %>
+                        <div class="col-md-4 skill<%=i%>">
+                            <p><img src="images/skill<%=i%>.svg" alt=""></p>
 
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="box-carte">
-                        <figure class="text-center">
-                            <img src="images/react.png" alt="">
-                        </figure>
-                        <h3>React</h3>
-                        <p>Outil formidable et très agréable à utiliser, j'ai eu l'occasion de m'en servir dans les petits et moyen projet. </p>
+                            <h3>
+                                <%= skill.title %>
+                            </h3>
+                            <p>
+                                <%= skill.content %>
+                            </p>
+                            <h6>Languages</h6>
+                            <ul>
+                                <% skill.languages.forEach((lang) => { %>
+                                    <li>
+                                        <%= lang %>
+                                    </li>
+                                    <% }) %>
+                            </ul>
 
-                    </div>
+                        </div>
+                        <% }) %>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="box-carte">
-                        <figure class="text-center">
-                            <img src="images/nodejs2.png" alt="">
-                        </figure>
-                        <h3>Node js</h3>
-                        <p>Outil complémentaire, je l'ai utilisé dans les moyens et gros projets, en binome avec mongoDB.</p>
-
-                    </div>
-                </div>
-            
             </div>
+            <div class="tools">
+                <h6>Mes outils de dev</h6>
+                <ul>
+                    <li>VS code</li>
+                    <li>Gitlab</li>
+                    <li>Github</li>
+                    <li>Terminal</li>
+                    <li>Npm packages</li>
+                    <li>PhpMyAdmin</li>
+                    <li>Robot3T</li>
+                    <li>MySQLWorkbench</li>
+                    <li>Stack overflow</li>
+                    <li>Codepen</li>
+                </ul>
+            </div>
+            <div class="packages">
+                <h6>Mes librairies préférées</h6>
+                <ul>
+                    <li>MomentJs</li>
+                    <li>Express</li>
+                    <li>Nodemailer</li>
+                    <li>Mongoose</li>
+                    <li>Sequelize</li>
+                    <li>Nodemon</li>
+                    <li>Morgan</li>
+                    <li>React-redux</li>
+                    <li>Bootstrap</li>
+                    <li>Sass</li>
+                </ul>
+            </div>
+            <div class="mask-circle"></div>
         </div>
     </div>
     <div id="projet" data-midnight="dark">
         <div class="container">
-        <h1>Mes projets</h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <figure>
-                <a href="https://zenitude.herokuapp.com/"><img src="images/zenitude.png" class="img-responsive" alt=""> </a>               
-                </figure>
+            <h1>Mes projets</h1>
+            <div class="row">
+                <% works.forEach((work) => { %>
+                    <div class="col-md-4 work">
+                        <a href="<%= work.link %>">
+                            <div class="card-mask">
+                                <p>
+                                    <%= work.title %>
+                                </p>
+                                <h5>Visiter</h5>
+                            </div>
+                        </a>
+                        <img src="images/<%= work.picture %>" alt="<%= work.title %>">
+                    </div>
+                    <% }) %>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <figure>
-                        <a href="https://int-prem-acc.herokuapp.com"><img src="images/ipa.png" class="img-responsive" alt=""></a>                        
-                </figure>
-                    
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <figure>
-                    <a href="https://rocky-lake-24460.herokuapp.com/"><img src="images/blog.png" alt="" class="img-responsive"></a>
-                </figure>
-            </div>
-   
-            
-        </div>
         </div>
     </div>
     <div id="contact">
         <h1>Contatez moi </h1>
         <div class="container">
-            <!-- Form Area -->
             <div class="contact-form">
-                <!-- Form -->
                 <form id="contact-us" method="post" action="/email">
                     <div class="row">
-                        <!-- Left Inputs -->
                         <div class="col-md-6 " data-wow-delay=".5s">
-                            <!-- Name -->
                             <input type="text" name="name" id="name" required="required" class="form" placeholder="Nom & prenom" />
-                            <!-- Email -->
                             <input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
-                            <!-- Subject -->
                             <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Sujet" />
                         </div>
-                        <!-- End Left Inputs -->
-                        <!-- Right Inputs -->
                         <div class="col-md-6 " data-wow-delay=".5s">
-                            <!-- Message -->
                             <textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
                         </div>
-                        <!-- End Right Inputs -->
-                        <!-- Bottom Submit -->
-         
-                            <!-- Send Button -->
-                            
-                        <!-- End Bottom Submit -->
-                        <!-- Clear -->
-                        
                         <div class="clear"></div>
-                        
-                        </div>
-                    
-                        
-                    </div>  
-                    <p class="text-center"><button type="submit" id="submit" name="submit" class="form-btn">Send Message</button></p>
-                    
-                </form>
-             
-                
 
-                <!-- Your Mail Message -->
-                <div class="mail-message-area">
-                    <!-- Message -->
-                    <div class="alert gray-bg mail-message not-visible-message">
-                        <strong>Thank You !</strong> Your email has been delivered.
                     </div>
-                </div>
-                </div>
-        
-            <!-- End Contact Form Area -->
-        </div>
-   <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                    <p>Callens</p>
-                    <p>Alexandre</p>
-                    <p>06 73 17 69 00</p>
             </div>
-            <div class="col-md-4">
+            <p class="text-center"><button type="submit" id="submit" name="submit" class="form-btn">Send Message</button></p>
 
+            </form>
+            <div class="mail-message-area">
+                <div class="alert gray-bg mail-message not-visible-message">
+                    <strong>Merci !</strong> Vôtre mail à bien etait envoyé.
+                </div>
             </div>
-            <div class="col-md-4">
-                    <p class="made">made in simplon</p>
-            </div>
-               
         </div>
-          
-            
-
     </div>
-   </footer>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 happy-face">
+                    <img src="images/smug.svg" class="smug" alt="">
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/alexandre.callens.90?ref=bookmarks"><img src="images/facebook.svg" alt="lien facebook"></a></li>
+                        <li class="twitter"><a href="https://twitter.com/alekzxand"><img src="images/twitter.svg" alt="lien twitter"></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/alexandre-callens-083364148"><img src="images/linkedin.svg" alt="lien linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">CC 3.0 BY</a></div> -->
+    </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="./js/midnight.jquery.min.js"></script>
 <script src="./js/script.js"></script>
 
